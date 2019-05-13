@@ -1,0 +1,35 @@
+body {
+    background-color:#FBFCF8;
+    margin: 0;
+}
+
+.main_header {
+    height: 150px;
+    background-color: darkslategray;
+    margin-bottom: 50px;
+}
+
+.photo_gallery {
+    display: inline-grid;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    
+}
+
+.thumb img {
+    border-radius: 20%;
+    border: solid .5px black;
+    transition-duration: 300ms;
+    
+}
+.thumb img:hover {
+    transform: scale3d(1.1, 1.1, .5);
+    border-color:lightgreen;
+    box-shadow: 20px 10px 5px rgb(118, 126, 118);
+}
+
+#main {
+    text-align: center;
+}
