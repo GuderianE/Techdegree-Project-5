@@ -3,13 +3,13 @@ $(document).ready(function() {
 });
  
     let $search = $('#myinput');
-    let $imgs = $('.photo');
+    let $photos = $('.photo');
 
 $search.keyup(function(event){
   let val = $search.val().toLowerCase();
-  $imgs.show();
+  $photos.show();
   if ( val !== '')  {
-    $imgs.not('[data-caption*="' + val + '"]').hide();
+    $photos.not('[data-caption*="' + val + '"]').hide();
   }
 });
 
